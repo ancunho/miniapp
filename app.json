@@ -2,8 +2,7 @@
   "pages":[
     "pages/start/start",
     "pages/index/index",
-    "pages/logs/logs",
-    "pages/eventpost/eventpost"
+    "pages/logs/logs"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -12,16 +11,12 @@
     "navigationBarTextStyle":"black"
   },
   "tabBar": {
-    "list": [
-    {
-        "pagePath": "pages/index/index",
-        "iconPath": "images/icon_home.png",
-        "selectedIconPath": "images/icon_home_on.png"
-    },
-    {
-        "pagePath": "pages/logs/logs",
-        "iconPath": "images/icon_event.png",
-        "selectedIconPath": "images/icon_event_on.png"
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "text"
+    },{
+      "pagePath": "pages/logs/logs",
+      "text": "text"
     }]
   }
 }

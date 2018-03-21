@@ -13,7 +13,7 @@
       </view>
       <view class="bd">
          <image class="smalltitle" src="/static/images/more/confirm-word1.png"></image>
-        <view class="confirm-btn" bindtap='goToIndex'>
+        <view class="confirm-btn" bindtap='getopenid'>
           <text >立即体验</text>
         </view>
         <text class="copyright">@ Powerd By AnnStudio</text>

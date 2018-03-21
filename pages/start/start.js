@@ -8,7 +8,21 @@ Page({
         year: 2017,
         userInfo: {}
     },
-
+    getopenid : function () {
+      wx.login({
+        success : function(res) {
+          console.log(res);
+          wx.request({
+            url: 'https://ckbiz.vip/cc/wechat/api/getMiniappOpenID.do'
+            , data : { code : res.code}
+            , method : 'GET'
+            , success : function (result) {
+              console.log(result);
+            }
+          })
+        }
+      })
+    },
     goToIndex: function () {
         wx.switchTab({
             url: '/pages/index/index',
